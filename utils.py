@@ -45,7 +45,7 @@ def generate_text_roberta(sequence, model_path="https://ikincibucket.s3.us-east-
     
     return clean_prediction
 
-def generate_text_gpt_2(sequence, model_path="/Users/turalalizada/Desktop/wordembedding/Models/GPT2", tokenizer_path="/Users/turalalizada/Desktop/wordembedding/Models/GPT2"):
+def generate_text_gpt_2(sequence, model_path="s3://ikincibucket/Models/GPT2.zip", tokenizer_path="s3://ikincibucket/Models/GPT2.zip"):
     model = load_model(model_path, model_type="GPT2")
     tokenizer = load_tokenizer(tokenizer_path, model_type="GPT2")
     ids = tokenizer.encode(sequence, return_tensors='pt')
