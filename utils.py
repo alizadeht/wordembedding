@@ -17,7 +17,7 @@ def load_tokenizer(tokenizer_path, model_type="RoBERTa"):
         tokenizer = RobertaTokenizer.from_pretrained(tokenizer_path)
     return tokenizer
 
-def generate_text_roberta(sequence, model_path="./Models/AzBERTo/", tokenizer_path="./Models/AzBERTo/", mask_token="<mask>"):
+def generate_text_roberta(sequence, model_path="https://storage.googleapis.com/azwordembedding/Models/AzBERTo/", tokenizer_path="https://storage.googleapis.com/azwordembedding/Models/AzBERTo/", mask_token="<mask>"):
     model = load_model(model_path)
     tokenizer = load_tokenizer(tokenizer_path)
 
@@ -45,7 +45,7 @@ def generate_text_roberta(sequence, model_path="./Models/AzBERTo/", tokenizer_pa
     
     return clean_prediction
 
-def generate_text_gpt_2(sequence, model_path="./Models/GPT2/", tokenizer_path="./Models/GPT2/"):
+def generate_text_gpt_2(sequence, model_path="https://storage.googleapis.com/azwordembedding/Models/GPT2/", tokenizer_path="https://storage.googleapis.com/azwordembedding/Models/GPT2/"):
     model = load_model(model_path, model_type="GPT2")
     tokenizer = load_tokenizer(tokenizer_path, model_type="GPT2")
     ids = tokenizer.encode(sequence, return_tensors='pt')
