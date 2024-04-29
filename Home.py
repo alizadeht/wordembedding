@@ -9,7 +9,7 @@ st.title("Welcome to our Contextualized Word Embeddings Model App!")
 col1, col2, col3 = st.columns([1,2,1])
 
 with col2:
-    st.image("/Users/turalalizada/Desktop/SDP II/az-word-embedding-main 2/Screenshot 2023-12-24 at 21.46.32.png", caption="Biz yaradaq, siz yazın!")
+    st.image("Screenshot 2023-12-24 at 21.46.32.png", caption="Biz yaradaq, siz yazın!")
 
 
 # Introduction or About section
