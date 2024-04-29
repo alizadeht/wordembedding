@@ -17,7 +17,7 @@ def load_tokenizer(tokenizer_path, model_type="RoBERTa"):
         tokenizer = RobertaTokenizer.from_pretrained(tokenizer_path)
     return tokenizer
 
-def generate_text_roberta(sequence, model_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/AzBERTo/model.safetensors", tokenizer_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/AzBERTo/model.safetensors", mask_token="<mask>"):
+def generate_text_roberta(sequence, model_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/AzBERTo", tokenizer_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/AzBERTo", mask_token="<mask>"):
     model = load_model(model_path)
     tokenizer = load_tokenizer(tokenizer_path)
 
@@ -45,7 +45,7 @@ def generate_text_roberta(sequence, model_path="https://ikincibucket.s3.us-east-
     
     return clean_prediction
 
-def generate_text_gpt_2(sequence, model_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/GPT2/model.safetensors", tokenizer_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/GPT2/model.safetensors"):
+def generate_text_gpt_2(sequence, model_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/GPT2", tokenizer_path="https://ikincibucket.s3.us-east-2.amazonaws.com/Models/GPT2"):
     model = load_model(model_path, model_type="GPT2")
     tokenizer = load_tokenizer(tokenizer_path, model_type="GPT2")
     ids = tokenizer.encode(sequence, return_tensors='pt')
