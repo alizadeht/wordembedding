@@ -1,37 +1,20 @@
 from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForMaskedLM, pipeline
 
-def load_model_and_tokenizer(model_name, model_type="RoBERTa"):
-    """
-    Loads a model and tokenizer from the Hugging Face Hub based on the model type.
-    Args:
-        model_name (str): The Hugging Face Hub identifier for the model.
-        model_type (str): The type of model, e.g., "GPT2" or "RoBERTa".
-    Returns:
-        tokenizer: The loaded tokenizer.
-        model: The loaded model.
-    """
-    try:
-        if model_type == "GPT2":
-            tokenizer = AutoTokenizer.from_pretrained(model_name)
-            model = AutoModelForCausalLM.from_pretrained(model_name)
-        else:  # Default to RoBERTa
-            tokenizer = AutoTokenizer.from_pretrained(model_name)
-            model = AutoModelForMaskedLM.from_pretrained(model_name)
-        return tokenizer, model
-    except Exception as e:
-        raise Exception(f"Failed to load model and tokenizer for {model_type} with error: {str(e)}")
+# Constants for model paths
+ROBERTA_MODEL = "turalizada/AzBERTaContextualizedWordEmbeddingsinAzerbaijaniLanguage"
+GPT2_MODEL = "turalizada/GPT2ContextualizedWordEmbeddinginAzerbaijaniLanguage"
 
-def generate_text_with_mask(sequence, model_name):
+def generate_text_with_mask(sequence):
     """
-    Generate text using a model trained for masked language modeling.
+    Generate text using the RoBERTa model trained for masked language modeling.
     Args:
         sequence (str): The text sequence with mask tokens for prediction.
-        model_name (str): The model identifier on Hugging Face Hub.
     Returns:
         str: The text sequence with the mask filled.
     """
     try:
-        tokenizer, model = load_model_and_tokenizer(model_name, model_type="RoBERTa")
+        tokenizer = AutoTokenizer.from_pretrained(ROBERTA_MODEL)
+        model = AutoModelForMaskedLM.from_pretrained(ROBERTA_MODEL)
         fill_mask = pipeline("fill-mask", model=model, tokenizer=tokenizer)
         sequence = sequence.replace("[MASK]", tokenizer.mask_token)  # Replace [MASK] with the correct mask token
         predictions = fill_mask(sequence)
@@ -39,17 +22,17 @@ def generate_text_with_mask(sequence, model_name):
     except Exception as e:
         raise Exception(f"Failed to generate text with mask with error: {str(e)}")
 
-def generate_text_gpt_2(sequence, model_name):
+def generate_text_gpt_2(sequence):
     """
-    Generate text using a GPT-2 model.
+    Generate text using the GPT-2 model.
     Args:
         sequence (str): Input text sequence for generation.
-        model_name (str): The model identifier on Hugging Face Hub.
     Returns:
         str: Generated text.
     """
     try:
-        tokenizer, model = load_model_and_tokenizer(model_name, model_type="GPT2")
+        tokenizer = AutoTokenizer.from_pretrained(GPT2_MODEL)
+        model = AutoModelForCausalLM.from_pretrained(GPT2_MODEL)
         inputs = tokenizer.encode(sequence, return_tensors='pt')
         outputs = model.generate(
             inputs,
