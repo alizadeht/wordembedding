@@ -63,22 +63,3 @@ def generate_text_gpt_2(sequence, model_name):
         return tokenizer.decode(outputs[0], skip_special_tokens=True).split('\n')[0]
     except Exception as e:
         raise Exception(f"Failed to generate text with GPT-2 with error: {str(e)}")
-
-# Example model names, assuming these are correct identifiers from Hugging Face
-model_roberta = "turalizada/AzBERTaContextualizedWordEmbeddingsinAzerbaijaniLanguage"
-model_gpt2 = "turalizada/GPT2ContextualizedWordEmbeddinginAzerbaijaniLanguage"
-
-# Example usage in Streamlit app
-option = st.selectbox("Choose the model:", ["RoBERTa", "GPT-2"])
-
-sequence = st.text_input("Enter your text here:")
-
-if st.button("Generate Text"):
-    if option == "RoBERTa":
-        # Ensure that the correct model name is being passed
-        roberta_output = generate_text_with_mask(sequence, model_roberta)
-        st.text(roberta_output)
-    elif option == 'GPT-2':
-        # Correctly passing the model name for GPT-2
-        gpt2_output = generate_text_gpt_2(sequence, model_gpt2)
-        st.text(gpt2_output)
