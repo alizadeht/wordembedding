@@ -4,7 +4,7 @@ from transformers import AutoTokenizer, AutoModelForCausalLM, AutoModelForMasked
 ROBERTA_MODEL = "turalizada/AzBERTaContextualizedWordEmbeddingsinAzerbaijaniLanguage"
 GPT2_MODEL = "turalizada/GPT2ContextualizedWordEmbeddinginAzerbaijaniLanguage"
 
-def generate_text_with_mask(sequence):
+def generate_text_roberta(sequence):
     """
     Generate text using the RoBERTa model trained for masked language modeling.
     Args:
