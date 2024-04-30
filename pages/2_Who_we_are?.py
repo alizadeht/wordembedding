@@ -7,19 +7,19 @@ st.header("We are:")
 
 # Tural Alizada
 st.subheader('Tural Alizada')
-st.image('wordembedding/pages/45aad0de-db4e-4576-b184-bcb01da96e67.jpg', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
+st.image('latifasgarov.jpeg', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
 
 # Asima Kochariyeva
 st.subheader('Asima Kochariyeva')
-st.image('path_to_image_asima', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
+st.image('latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
 
 # Latif Asgarov
 st.subheader('Latif Asgarov')
-st.image('path_to_image_latif', caption='Latif Asgarov - Focused on data collection and preprocessing.', width=300)
+st.image('latifasgarov.jpeg', caption='Latif Asgarov - Focused on data collection and preprocessing.', width=300)
 
 # Umid Suleymanov
 st.subheader('Project Advisor: Umid Suleymanov')
-st.image('path_to_image_umid', caption='Umid Suleymanov - Project Advisor.', width=300)
+st.image('latifasgarov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
 
 
 
