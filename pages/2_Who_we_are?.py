@@ -7,7 +7,7 @@ st.header("We are:")
 
 # Tural Alizada
 st.subheader('Tural Alizada')
-st.image('latifasgarov.jpeg', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
+st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/turalalizada.JPG', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
 
 # Asima Kochariyeva
 st.subheader('Asima Kochariyeva')
