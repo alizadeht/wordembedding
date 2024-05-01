@@ -7,19 +7,19 @@ st.header("We are:")
 
 # Tural Alizada
 st.subheader('Tural Alizada')
-st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/turalalizada.JPG', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
+st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/turalalizada.JPG', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
 
 # Asima Kochariyeva
 st.subheader('Asima Kochariyeva')
-st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
+st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
 
 # Latif Asgarov
 st.subheader('Latif Asgarov')
-st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgarov.jpeg', caption='Latif Asgarov - Focused on data collection and preprocessing.', width=300)
+st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/latifasgarov.jpeg', caption='Latif Asgarov - Focused on data collection and preprocessing.', width=300)
 
 # Umid Suleymanov
 st.subheader('Project Advisor: Umid Suleymanov')
-st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgarov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
+st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/latifasgarov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
 
 
 
