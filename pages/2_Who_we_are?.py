@@ -15,7 +15,7 @@ st.image('latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project docum
 
 # Latif Asgarov
 st.subheader('Latif Asgarov')
-st.image('latifasgarov.jpeg', caption='Latif Asgarov - Focused on data collection and preprocessing.', width=300)
+st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgarov.jpeg', caption='Latif Asgarov - Focused on data collection and preprocessing.', width=300)
 
 # Umid Suleymanov
 st.subheader('Project Advisor: Umid Suleymanov')
