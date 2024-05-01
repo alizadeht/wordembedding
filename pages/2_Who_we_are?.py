@@ -11,7 +11,7 @@ st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/turalalizad
 
 # Asima Kochariyeva
 st.subheader('Asima Kochariyeva')
-st.image('latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
+st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
 
 # Latif Asgarov
 st.subheader('Latif Asgarov')
@@ -19,7 +19,7 @@ st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgaro
 
 # Umid Suleymanov
 st.subheader('Project Advisor: Umid Suleymanov')
-st.image('latifasgarov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
+st.image('https://github.com/alizadeht/wordembedding/blob/main/pages/latifasgarov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
 
 
 
