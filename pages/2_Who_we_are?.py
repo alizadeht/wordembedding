@@ -19,7 +19,7 @@ st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/l
 
 # Umid Suleymanov
 st.subheader('Project Advisor: Umid Suleymanov')
-st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/blob/main/pages/umidsuleymanov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
+st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/umidsuleymanov.jpeg', caption='Umid Suleymanov - Project Advisor.', width=300)
 
 
 st.write("""
