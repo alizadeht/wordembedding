@@ -3,8 +3,6 @@ from utils import *
 
 st.title('Who we are?')
 
-st.header("We are:")
-
 # Tural Alizada
 st.subheader('Tural Alizada')
 st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/turalalizada.JPG', caption='Tural Alizada - Lead on data management, model architecture, and data science aspects.', width=300)
