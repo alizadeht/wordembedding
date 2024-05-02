@@ -13,7 +13,7 @@ st.markdown("""
 
 # Asima Kochariyeva
 st.subheader('Asima Kochariyeva')
-st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/latifasgarov.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
+st.image('https://raw.githubusercontent.com/alizadeht/wordembedding/main/pages/asimakochariyeva.jpeg', caption='Asima Kochariyeva - Managed project documentation and validation processes.', width=300)
 
 st.markdown("""
 [Contact: akochariyeva12137@ada.edu.az](mailto:akochariyeva12137@ada.edu.az)
